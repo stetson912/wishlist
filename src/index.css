@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom styles */
+
+/* vars */
+:root {
+    /* font styles */
+    font-family: Raleway, mono;
+    font-size: min(max(1rem, 4vw), 24px);
+    --fs-regular: 400;
+    --fs-bold: 700;
+    /* colors */
+    --primary-light: rgb(134, 46, 122, 1);
+    --primary-dark: rgb(85, 22, 82, 1);
+    --secondary: rgb(215, 159, 51, 1);
+    --tertiary: rgb(34, 104, 156, 1);
+
+    --fc-primary: rgb(251, 235, 249);
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2.15rem;
+}
+
+h3 {
+    font-size: 1.92rem;
+}
+
+h4 {
+    font-size: 1.69rem;
+}
+
+h5 {
+    font-size: 1.46rem;
+}
+
+h6 {
+    font-size: 1.23rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+body {
+
+    background-color: var(--primary-dark);
+    color: white;
+}
