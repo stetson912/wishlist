@@ -142,8 +142,8 @@ table {
     /* font styles */
     font-family: Raleway, mono;
     font-size: min(max(1rem, 4vw), 24px);
-    --fs-regular: 400;
-    --fs-bold: 700;
+    --fw-regular: 400;
+    --fw-bold: 700;
     /* colors */
     --primary-light: rgb(134, 46, 122, 1);
     --primary-dark: rgb(85, 22, 82, 1);
@@ -185,4 +185,13 @@ body {
 
     background-color: var(--primary-dark);
     color: white;
+}
+
+.btn {
+    padding: .5em 1.2em;
+    color: var(--fc-primary);
+    background-color: var(--secondary);
+    font-size: 1em;
+    border-radius: .4em;
+    border: none;
 }

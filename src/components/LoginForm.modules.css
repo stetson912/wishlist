@@ -1,0 +1,59 @@
+.login {
+    width: 90vw;
+    background-color: var(--primary-dark);
+    margin: 5vw auto;
+    border-radius: .5em;
+    box-shadow: 5px 5px 10px #3f103d,
+        -5px -5px 10px #6b1c67;
+}
+
+@media screen and (min-width: 800px) {
+    .login {
+        width: 60vw;
+    }
+}
+
+.login__form {
+    padding: 1em;
+}
+
+.login__form__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-size: 1em;
+
+}
+
+.form__input {
+    outline: none;
+    margin-left: clamp(1rem, 1.5rem, 2rem);
+    width: 70%;
+    height: 1.5em;
+    background-color: var(--primary-dark);
+    color: var(--fc-primary);
+    border-radius: .4em;
+    border: none;
+    box-shadow: inset 5px 5px 10px #3f103d,
+        inset -5px -5px 10px #6b1c67;
+
+    padding: .5em;
+    font-size: 1em;
+}
+
+.form__input:focus-visible {
+    outline: none;
+}
+
+.btn {
+    background-color: var(--primary-dark);
+    box-shadow: inset 5px 5px 10px #3f103d,
+        inset -5px -5px 10px #6b1c67;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #3f103d,
+        -5px -5px 10px #6b1c67;
+}

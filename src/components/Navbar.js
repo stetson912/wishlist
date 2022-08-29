@@ -1,10 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 // styles
 import "./Navbar.modules.css"
+//hooks
+import { useLogout } from '../hooks/useLogout'
 
 export default function Navbar() {
-    const [loggedIn, setLoggedIn] = useState(true)
+    const [loggedIn] = useState(false)
+    const { logout } = useLogout()
 
     const toggleMenu = () => {
         const navLinkUl = document.querySelector('.navigation__links')
@@ -32,10 +35,10 @@ export default function Navbar() {
             </svg>
             <ul className="navigation__links">
                 <li className="navigation__link"><Link to="/">Home</Link></li>
-                {loggedIn && <li className="navigation__link"><Link to="dashboard">Dashboard</Link></li>}
-                {!loggedIn && <li className="navigation__link"><Link to="signup">Sign Up</Link></li>}
-                {!loggedIn && <li className="navigation__link"><Link to="login">Login</Link></li>}
-                {loggedIn && <li className="navigation__link"><Link to="logout">Logout</Link></li>}
+                <li className="navigation__link"><Link to="dashboard">Dashboard</Link></li>
+                <li className="navigation__link"><Link to="signup">Sign Up</Link></li>
+                <li className="navigation__link"><Link to="login">Login</Link></li>
+                <li onClick={logout} className="navigation__link"><Link to="/">Logout</Link></li>
             </ul>
 
         </nav>
