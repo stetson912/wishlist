@@ -7,6 +7,10 @@
         -5px -5px 10px #6b1c67;
 }
 
+.login>h3 {
+    padding: .5em 0;
+}
+
 @media screen and (min-width: 800px) {
     .login {
         width: 60vw;

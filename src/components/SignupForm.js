@@ -16,6 +16,7 @@ export default function SignupForm() {
 
     return (
         <div className="login">
+            <h3>Sign Up</h3>
             <form className="login__form" onSubmit={(e) => handleSubmit(e)}>
                 <label className='login__form__label'>Email:
                     <input className="login__form__email form__input"
