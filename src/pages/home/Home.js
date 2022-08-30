@@ -5,6 +5,7 @@ import './Home.modules.css'
 import SignupForm from '../../components/SignupForm'
 
 export default function Home() {
+    console.log(process.env.REACT_APP_AUTH_DOMAIN)
     return (
         <div className="home">
             <h1 className="home__title">Welcome to WishList!</h1>
