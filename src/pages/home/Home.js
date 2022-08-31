@@ -3,8 +3,11 @@ import React from 'react'
 import './Home.modules.css'
 //pages and components
 import SignupForm from '../../components/SignupForm'
+//hooks
+import { useAuthContext } from '../../hooks/useAuthContext'
 
 export default function Home() {
+    const { user } = useAuthContext()
     console.log(process.env.REACT_APP_AUTH_DOMAIN)
     return (
         <div className="home">
@@ -14,7 +17,7 @@ export default function Home() {
                 are hard to shop for? Why not make a WishList of items you can
                 easily share with them!
             </p>
-            <SignupForm />
+            {!user && <SignupForm />}
         </div>
     )
 }
